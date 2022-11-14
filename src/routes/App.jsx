@@ -20,7 +20,12 @@ import LUwithGaussianSimpleElimination from '../pages/Matrices/LUwithGaussianSim
 import GaussianEliminationWithTotalPivoting from '../pages/Matrices/GaussianEliminationWithTotalPivoting';
 import GaussianSimpleElimination from '../pages/Matrices/GaussianSimpleElimination';
 import GaussianEliminationWhitPartialPivoting from '../pages/Matrices/GaussianEliminationWithPartialPivoting';
-
+import CuadraticSpline from '../pages/Interpolations/CuadraticSpline';
+import Lagrange from '../pages/Interpolations/Lagrange';
+import CubicSpline from '../pages/Interpolations/CubicSpline';
+import LinealSpline from '../pages/Interpolations/LinealSpline';
+import NewtonInterpolation from '../pages/Interpolations/NewtonInterpolation';
+import Vandermonde from '../pages/Interpolations/Vandermonde';
 
 const App = () => {
   return (
@@ -45,6 +50,12 @@ const App = () => {
           <Route exact path="/gaussian-elimination-with-total-pivoting" component={GaussianEliminationWithTotalPivoting} />
           <Route exact path="/gaussian-simple-elimination" component={GaussianSimpleElimination} />
           <Route exact path="/gaussian-elimination-with-partial-pivoting" component={GaussianEliminationWhitPartialPivoting} />
+          <Route exact path="/cuadratic-spline" component={CuadraticSpline} />
+          <Route exact path="/lagrange" component={Lagrange} />
+          <Route exact path="/cubic-spline" component={CubicSpline} />
+          <Route exact path="/lineal-spline" component={LinealSpline} />
+          <Route exact path="/newton-interpolation" component={NewtonInterpolation} />
+          <Route exact path="/vandermonde" component={Vandermonde} />
         </Switch>
       </Layout>
     </BrowserRouter>
