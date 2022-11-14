@@ -7,8 +7,8 @@ const Navbar = () => {
   const toggleMenu = () => document.body.className.toggle("open");
   return (
     <nav class="navbar">
-      <button onClick={()=>toggleMenu()} class="burger"></button>
-      <button class="button">Home</button>
+      <button onClick={() => toggleMenu()} class="burger"></button>
+      <NavLink className="nav-button" to="/"><button class="button">Home</button></NavLink>
       <div class="dropdowns">
         <div class="dropdown">
           <button class="button">
@@ -16,12 +16,12 @@ const Navbar = () => {
             <img src={chevron} />
           </button>
           <div class="dropdown-menu">
-          <button><NavLink className="nav-button" to="/">Incremental Search</NavLink></button>
-          <button><NavLink className="nav-button" to="/">False Rule</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Newton</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Fixed Point</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Secant</NavLink></button>
-
+            <NavLink className="nav-button" to="/incremental-search"><button>Incremental Search</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>False Rule</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Newton</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Fixed Point</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Secant</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Multiple Roots</button></NavLink>
           </div>
         </div>
         <div class="dropdown">
@@ -30,31 +30,31 @@ const Navbar = () => {
             <img src={chevron} />
           </button>
           <div class="dropdown-menu">
-          <button><NavLink className="nav-button" to="/">Gaussian Simple Elimination</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Gaussian Elimination With Partial Pivoting</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Gaussian elimination with Total Pivoting</NavLink></button>
-          <button><NavLink className="nav-button" to="/">LU with Gaussian Simple Elimination</NavLink></button>
-          <button><NavLink className="nav-button" to="/">LU With Partial Pivoting</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Crout</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Doolittle</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Cholesky</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Jacobi</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Gauss-Seidel</NavLink></button>
-          <button><NavLink className="nav-button" to="/">SOR</NavLink></button>
+            <NavLink className="nav-button" to="/"><button>Gaussian Simple Elimination</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Gaussian Elimination With Partial Pivoting</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Gaussian elimination with Total Pivoting</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>LU with Gaussian Simple Elimination</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>LU With Partial Pivoting</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Crout</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Doolittle</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Cholesky</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Jacobi</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Gauss-Seidel</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>SOR</button></NavLink>
           </div>
         </div>
         <div class="dropdown">
           <button class="button">
-          Interpolations
+            Interpolations
             <img src={chevron} />
           </button>
           <div class="dropdown-menu">
-          <button><NavLink className="nav-button" to="/">Vandermonde</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Newton</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Lagrange</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Lineal Spline</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Cuadratic Spline</NavLink></button>
-          <button><NavLink className="nav-button" to="/">Cubic Spline</NavLink></button>
+            <NavLink className="nav-button" to="/"><button>Vandermonde</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Newton</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Lagrange</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Lineal Spline</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Cuadratic Spline</button></NavLink>
+            <NavLink className="nav-button" to="/"><button>Cubic Spline</button></NavLink>
 
           </div>
         </div>

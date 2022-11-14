@@ -9,16 +9,6 @@ const Matrix = () => {
 
   return (
     <section>
-      for(var i = 0; i < row; i++){
-        console.log(i);
-      } 
-
-      <ItemList >
-      {results?.map(character => (
-          <Character character = {character} key= {character.id}/>
-        ))}
-      </ItemList>
-      <button onClick={() => {updatePageNumber(pageNumber+1);}}>Click me</button>
     </section>
   );
 };

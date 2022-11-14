@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Home from '../pages/Home';
 import '@styles/global.css';
-
+import IncrementalSearch from '../pages/functions/IncrementalSearch';
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-
+          <Route exact path="/incremental-search" component={IncrementalSearch} />
         </Switch>
       </Layout>
     </BrowserRouter>

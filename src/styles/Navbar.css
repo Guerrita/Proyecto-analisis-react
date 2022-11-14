@@ -10,13 +10,14 @@ button {
 }
 
 a {
-  color: #f9f9f9;
+  color: rgba(249,249,249);
   text-decoration: none;
+  display: flex;
 }
 
 @media (width >= 500px) {
   button {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
@@ -161,14 +162,14 @@ body.open .burger {
   }
 }
 
-.dropdown-menu > button {
-  color: #f9f9f9;
+.dropdown-menu > a {
+  color: rgba(249,249,249);
   opacity: 1;
   height: 40px;
 }
 
 @media (width >= 500px) {
-  .dropdown-menu > button {
+  .dropdown-menu > a {
     opacity: 0.6;
   }
 
@@ -177,6 +178,6 @@ body.open .burger {
   }
 }
 
-.dropdown-menu > button:hover {
+.dropdown-menu > a:hover {
   opacity: 1;
 }
