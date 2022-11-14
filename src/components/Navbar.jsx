@@ -17,11 +17,11 @@ const Navbar = () => {
           </button>
           <div class="dropdown-menu">
             <NavLink className="nav-button" to="/incremental-search"><button>Incremental Search</button></NavLink>
-            <NavLink className="nav-button" to="/"><button>False Rule</button></NavLink>
-            <NavLink className="nav-button" to="/"><button>Newton</button></NavLink>
-            <NavLink className="nav-button" to="/"><button>Fixed Point</button></NavLink>
-            <NavLink className="nav-button" to="/"><button>Secant</button></NavLink>
-            <NavLink className="nav-button" to="/"><button>Multiple Roots</button></NavLink>
+            <NavLink className="nav-button" to="/false-rule"><button>False Rule</button></NavLink>
+            <NavLink className="nav-button" to="/newton"><button>Newton</button></NavLink>
+            <NavLink className="nav-button" to="/fixed-point"><button>Fixed Point</button></NavLink>
+            <NavLink className="nav-button" to="/secant"><button>Secant</button></NavLink>
+            <NavLink className="nav-button" to="/multiple-roots"><button>Multiple Roots</button></NavLink>
           </div>
         </div>
         <div class="dropdown">

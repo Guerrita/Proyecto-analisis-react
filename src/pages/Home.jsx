@@ -10,7 +10,7 @@ const Home = () => {
         <div>
           <h1 className=''>JABA Method Solver</h1>
         </div>
-        <img src={banner} alt="doctores" className="banner-image" />
+        <img src={banner} alt="Principal Banner" className="banner-image" />
       </section>
     </div>
   );

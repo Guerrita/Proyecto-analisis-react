@@ -1,7 +1,7 @@
 import React from "react";
 import { ChangeEvent, useState } from "react";
 
-const Newton = () => {
+const MultipleRoots = () => {
 
   const [value, setValue] = useState("");
 
@@ -11,7 +11,7 @@ const Newton = () => {
 
   return (
   <section className="container">
-  <h2>Newton</h2>
+  <h2>Multiple Roots</h2>
   <form>
     <div className="md-textbox">
       <input
@@ -31,6 +31,16 @@ const Newton = () => {
         type="text"
       />
       <label htmlFor="textbox">First Derivative</label>
+    </div>
+
+    <div className="md-textbox">
+      <input
+        onChange={handleChange}
+        className={`${value ? "has-value" : ""}`}
+        id="function"
+        type="text"
+      />
+      <label htmlFor="textbox">Second Derivative</label>
     </div>
 
     <div className="md-textbox">
@@ -67,9 +77,8 @@ const Newton = () => {
     <input type="submit" value="Calculate" className="primary-button login-button" />
     </form>
   </section>
-
   );
 };
 
 
-export default Newton;
+export default MultipleRoots;
